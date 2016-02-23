@@ -9,8 +9,11 @@ Moves messages from reddit to a Kafka topic.
 ## Options
 
 `--kafka-connect BROKERS` Kafka broker list
+
 `--topic TOPIC` Kafka topic
+
 `--client-id` reddit client ID
+
 `--client-secret` reddit client secret
 
 ## Examples
