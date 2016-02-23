@@ -1,36 +1,24 @@
 # reddit-to-kafka
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Moves messages from reddit to a Kafka topic.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar reddit-to-kafka-0.1.0-standalone.jar [args]
+    $ java -jar target/uberjar/reddit-to-kafka-0.1.0-standalone.jar [args]
 
 ## Options
 
-FIXME: listing of options this app accepts.
+`--kafka-connect BROKERS` Kafka broker list
+`--topic TOPIC` Kafka topic
+`--client-id` reddit client ID
+`--client-secret` reddit client secret
 
 ## Examples
 
-...
+Send new posts in JSON format to the topic `reddit-testing`
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2015 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+    $ java -jar target/uberjar/reddit-to-kafka-0.1.0-standalone.jar
+           -k localhost:9092
+           -t reddit-testing
+           -c KDL92zNNDPKolI
+           -s 82lKCKGHZMliqdpErq2oLNqzdN3
