@@ -5,7 +5,6 @@
             :url "http://opensource.org/licenses/BSD-3-Clause"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/tools.cli "0.3.3"]
-                 [org.clojure/tools.logging "0.3.1"]
                  [clj-kafka "0.3.3"]
                  [cheshire "5.5.0"]
                  [com.wjoel/reddit-listener "0.0.1"]]
